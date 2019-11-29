@@ -159,15 +159,15 @@ cpdefine("inline:com-chilipeppr-widget-spconsole", ["chilipeppr_ready", "jqueryc
             // the single select port
             chilipeppr.subscribe("/com-chilipeppr-widget-serialport/recvSingleSelectPort", this, this.onRecvSingleSelectPort);
 
-            // load jquery-ui css, but make sure nobody else loaded it
-            if (!$("link[href='//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css']").length)
-                $('<link>')
-                .appendTo('head')
-                .attr({
-                    type: 'text/css',
-                    rel: 'stylesheet'
-                })
-                .attr('href', '//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css');
+            // // load jquery-ui css, but make sure nobody else loaded it
+            // if (!$("link[href='//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css']").length)
+            //     $('<link>')
+            //     .appendTo('head')
+            //     .attr({
+            //         type: 'text/css',
+            //         rel: 'stylesheet'
+            //     })
+            //     .attr('href', '//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css');
 
             this.logSetup();
             this.btnBarSetup();
